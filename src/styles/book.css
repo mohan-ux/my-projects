@@ -1,0 +1,160 @@
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.main {
+  background-color: white;
+  height: 800px;
+  width: 500px;
+  background-color: black;
+}
+
+.second {
+  background-color: white;
+  height: 800px;
+  width: 1000px;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.movie-background {
+  height: 500px;
+  width: 300px;
+  background-size: cover;
+  padding-left: 10px;
+  margin-left: 10px;
+  border-radius: 20px;
+}
+
+.movie-info {
+  margin-left: 40px;
+  color: white;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 2.5s;
+}
+
+.movie-details {
+  position: absolute;
+  top: 65%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 2.5s;
+  display: flex;
+}
+
+.starts {
+  color: rgb(248, 248, 74);
+}
+
+.live-ratings {
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  border-radius: 15px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+  font-size: 24px;
+  animation: slideInDown 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards,
+    fadeIn 1s ease forwards;
+}
+
+.format-selection {
+  position: absolute;
+  top: 30%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+  color: #e6dfdf;
+  animation: slideInDown 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.5s forwards,
+    fadeIn 1s ease 0.5s forwards;
+}
+
+.language-selection {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+  font-style: italic;
+  animation: slideInDown 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) 1s forwards,
+    fadeIn 1s ease 1s forwards;
+}
+
+.book-button {
+  position: absolute;
+  top: 70%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: #724518;
+  color: #ffffff;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  animation: slideInDown 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) 1.5s forwards,
+    fadeIn 1s ease 1.5s forwards;
+  transition: transform 0.3s ease;
+}
+
+.book-button:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 768px) {
+  .top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main {
+    width: 90%;
+    height: auto;
+  }
+
+  .second {
+    width: 90%;
+    height: auto;
+  }
+
+  .movie-background {
+    width: 100%;
+    margin-left: 0;
+    border-radius: 0;
+  }
+
+  .movie-info {
+    margin: 20px 0;
+  }
+
+  .movie-details {
+    top: 70%;
+  }
+
+  .live-ratings,
+  .format-selection,
+  .language-selection,
+  .book-button {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .second {
+    width: 800px;
+  }
+}
