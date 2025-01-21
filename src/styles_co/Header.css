@@ -1,0 +1,98 @@
+/* Global styles for the header */
+header {
+  background-color: #282c34;
+  padding: 10px 0;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a {
+  color: #61dafb;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 0 15px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+  color: #21a0f6;
+  transform: scale(1.05);
+}
+
+nav a.active {
+  font-weight: bold;
+  color: #ffffff;
+  border-bottom: 2px solid #61dafb;
+}
+/* Global styles for the header */
+header {
+  background: linear-gradient(
+    135deg,
+    #1e1e1e,
+    #282c34
+  ); /* Gradient for depth */
+  padding: 15px 0; /* Increased padding for a more spacious look */
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+header.scrolled {
+  background: linear-gradient(
+    135deg,
+    #1b1b1b,
+    #20232a
+  ); /* Darker gradient when scrolled */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3); /* Deeper shadow on scroll */
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+nav a {
+  color: #61dafb; /* Bright color for links */
+  text-decoration: none;
+  font-size: 18px; /* Slightly larger font size */
+  margin: 0 20px; /* Increased spacing */
+  padding: 5px 10px; /* Added padding for better click area */
+  border-radius: 4px; /* Rounded corners for links */
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffffff; /* White text on hover for contrast */
+  background-color: rgba(
+    97,
+    218,
+    251,
+    0.2
+  ); /* Subtle background color change on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+nav a.active {
+  font-weight: bold;
+  color: #ffffff;
+  border-bottom: 3px solid #61dafb; /* Thicker underline for active links */
+  background-color: rgba(
+    97,
+    218,
+    251,
+    0.1
+  ); /* Light background for active link */
+  padding-bottom: 7px; /* Extra padding for underline */
+}
