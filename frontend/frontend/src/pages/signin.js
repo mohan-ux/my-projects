@@ -19,14 +19,38 @@ const Signin = () => {
 
   return (
     <div className="auth-container">
-      <div className={`auth-wrapper ${isSignUpMode ? "sign-up-mode" : ""}`}>
-        {/* Background Particles */}
-        <div className="particles">
-          {[...Array(20)].map((_, i) => (
-            <div key={i} className="particle"></div>
-          ))}
-        </div>
+      {/* Water Droplets */}
+      <div className="water-droplets">
+        {[...Array(30)].map((_, i) => (
+          <div
+            key={`droplet-${i}`}
+            className="water-droplet"
+            style={{
+              left: `${Math.random() * 100}vw`,
+              animationDelay: `${Math.random() * 6}s`,
+              animationDuration: `${Math.random() * 4 + 6}s`,
+            }}
+          ></div>
+        ))}
+      </div>
 
+      {/* Snowflakes */}
+      <div className="snowflakes">
+        {[...Array(50)].map((_, i) => (
+          <div
+            key={`snowflake-${i}`}
+            className="snowflake"
+            style={{
+              left: `${Math.random() * 100}vw`,
+              animationDelay: `${Math.random() * 10}s`,
+              animationDuration: `${Math.random() * 5 + 5}s`,
+            }}
+          ></div>
+        ))}
+      </div>
+
+      {/* Sign-In Container */}
+      <div className={`auth-wrapper ${isSignUpMode ? "sign-up-mode" : ""}`}>
         {/* Forms Container */}
         <div className="forms-container">
           {/* Sign In Form */}

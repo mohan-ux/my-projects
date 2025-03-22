@@ -156,7 +156,7 @@ body {
 
 .feature-card.expanded {
   transform: scale(1.05);
-  background: #000033; /* Dark blue background for expanded cards */
+  background: #000033; 
 }
 
 .feature-card::before {

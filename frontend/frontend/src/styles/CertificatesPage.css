@@ -1,0 +1,100 @@
+.certificates-page {
+  background-color: #0d0d0d;
+  color: #e0e0e0;
+  text-align: center;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.certificates-header h1 {
+  font-size: 2.8rem;
+  color: #00d4ff;
+  text-shadow: 0px 0px 10px rgba(0, 212, 255, 0.8);
+}
+
+.certificates-header p {
+  font-size: 1.2rem;
+  color: #b0b0b0;
+  opacity: 0.8;
+}
+
+.certificates-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.certificate-card {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 212, 255, 0.3);
+  text-align: center;
+  width: 400px;
+  transform: scale(0.9);
+  transition: transform 0.3s ease-in-out;
+}
+
+.certificate-card:hover {
+  transform: scale(1);
+}
+
+.certificate-template {
+  background: linear-gradient(135deg, #1f1f1f, #292929);
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid #00d4ff;
+  box-shadow: 0px 0px 20px rgba(0, 212, 255, 0.5);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.certificate-template h2 {
+  color: #00d4ff;
+  font-size: 1.8rem;
+  text-shadow: 0px 0px 8px rgba(0, 212, 255, 0.7);
+}
+
+.certificate-template p {
+  color: #ddd;
+  font-size: 1rem;
+}
+
+.signature {
+  margin-top: 20px;
+  font-size: 1rem;
+  font-style: italic;
+  color: #b0b0b0;
+}
+
+.share-btn,
+.download-btn {
+  background: #00d4ff;
+  color: #000;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 10px;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.share-btn:hover,
+.download-btn:hover {
+  background: #009bb3;
+  transform: translateY(-3px);
+}
